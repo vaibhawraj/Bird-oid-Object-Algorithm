@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			margin:0px;
+		}
+		#chain_container {
+			width:100%;
+			height:100%;
+			border:solid 1px black;
+			overflow:hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="chain_container"></div>
+	<script src="canvas.js"></script>
+	<script src="vector.js"></script>
+	<script src="attractor.js"></script>
+	<script src="mover.js"></script>
+	<script src="boid.js"></script>
+	<script>
+	var elem = document.getElementById('chain_container');
+	 function resize() {
+	 	elem.style.height = (window.innerHeight - 2) + 'px';
+	 	elem.style.width = (window.innerWidth - 2) + 'px';
+	 }
+	 resize();
+	 window.addEventListener('resize',resize);
+	</script>
+	<script src="boidsim.js"></script>
+</body>
+</html>
